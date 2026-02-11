@@ -6,8 +6,8 @@ from io import BytesIO
 
 st.set_page_config(page_title="Extrator Patrimonial Pro", layout="wide")
 
-st.title("📂 Extrator de Patrimônio Customizado")
-st.markdown("Extração completa: Item, PIB, Descrição, Contrato, Série, Situação, Usuário e Valor.")
+st.title("📂 PDF/EXCEL")
+st.markdown("Extração completa.")
 
 uploaded_file = st.file_uploader("Upload do PDF", type="pdf")
 
@@ -88,3 +88,4 @@ if uploaded_file is not None:
             file_name="patrimonio_detalhado.xlsx",
             mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
         )
+
