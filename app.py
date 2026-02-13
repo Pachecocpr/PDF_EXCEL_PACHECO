@@ -85,9 +85,10 @@ if uploaded_file is not None:
         st.download_button(
             label="📥 Baixar Planilha Excel Completa",
             data=output.getvalue(),
-            file_name="patrimonio_detalhado.xlsx",
+            file_name="base_patrimonio.xlsx",
             mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
         )
+
 
 
 
